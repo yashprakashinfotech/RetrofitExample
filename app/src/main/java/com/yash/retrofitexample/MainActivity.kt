@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call<News>, response: Response<News>) {
-                val news = response.body()
+                val news1 = response.body()
 
-                if (news!=null){
-                    Log.d("Prakash",news.toString())
-                    adapter = NewsAdapter(this@MainActivity,news.articles)
+                if (news1!=null){
+                    Log.d("Prakash",news1.toString())
+                    adapter = NewsAdapter(this@MainActivity,news1.articles)
                     newsList.adapter = adapter
                     newsList.layoutManager = LinearLayoutManager(this@MainActivity)
                 }

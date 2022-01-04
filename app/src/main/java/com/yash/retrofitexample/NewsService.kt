@@ -31,6 +31,7 @@ object NewsService{
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
+
         newsInstance = retrofit.create(NewsInterface::class.java)
     }
 
